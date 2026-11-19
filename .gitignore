@@ -33,5 +33,6 @@ go.work.sum
 # .idea/
 # .vscode/
 
-storage
 config
+storage
+local.yml
