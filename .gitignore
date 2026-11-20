@@ -36,3 +36,6 @@ go.work.sum
 /config
 storage
 local.yml
+
+# Git Auto Commit Generator learned data
+.git-auto-commit/
