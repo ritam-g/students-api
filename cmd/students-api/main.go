@@ -12,6 +12,7 @@ import (
 	"time"
 
 	config "github.com/ritam-g/students-api/internal"
+	"github.com/ritam-g/students-api/internal/http/handlers/student"
 )
 
 func main() {
@@ -22,9 +23,7 @@ func main() {
 	//router setup
 	router := http.NewServeMux()
 
-	router.HandleFunc("GET /", func(w http.ResponseWriter, req *http.Request) {
-		w.Write([]byte("hellow this is great api "))
-	})
+	router.HandleFunc("GET /api/student", student.New())
 	// server setup
 
 	server := http.Server{
