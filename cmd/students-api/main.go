@@ -23,7 +23,7 @@ func main() {
 	//router setup
 	router := http.NewServeMux()
 
-	router.HandleFunc("GET /", student.New())
+	router.HandleFunc("POST /api/student", student.New())
 	// server setup
 
 	server := http.Server{
